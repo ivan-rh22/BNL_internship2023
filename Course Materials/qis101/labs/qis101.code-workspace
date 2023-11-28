@@ -1,0 +1,66 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "workbench.colorCustomizations": {
+            "tab.activeBorder": "#ff0000",
+            "tab.unfocusedActiveBorder": "#000000",
+        },
+        "debug.terminal.clearBeforeReusing": false,
+        "editor.defaultFormatter": null,
+        "editor.formatOnSave": true,
+        "editor.unusualLineTerminators": "prompt",
+        "files.autoSave": "afterDelay",
+        "gitlens.currentLine.enabled": false,
+        "python.analysis.typeCheckingMode": "strict",
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.completeFunctionParens": true,
+        "python.analysis.inlayHints.variableTypes": true,
+        "python.analysis.inlayHints.functionReturnTypes": true,
+        "python.analysis.stubPath": ".typings",
+        "python.analysis.diagnosticSeverityOverrides": {
+            "reportUnknownMemberType": "none",
+            "reportUnknownVariableType": "warning",
+            "reportUnknownParameterType": "warning",
+            "reportMissingParameterType": "warning",
+            "reportUnusedVariable": "warning",
+            "reportUnknownArgumentType": "warning",
+            "reportMissingTypeStubs": "warning",
+            "reportImplicitStringConcatenation": "none",
+            "reportUntypedFunctionDecorator": "warning",
+        },
+        "python.formatting.provider": "black",
+        "python.linting.enabled": true,
+        "python.linting.lintOnSave": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.mypyArgs": [
+            "--config-file=${workspaceFolder}/.mypy.ini"
+        ],
+        "python.linting.pylintEnabled": false,
+        "python.linting.pylintArgs": [
+            "--good-names-rgxs=^[_a-z][_a-z0-9]?$, ^[_A-Z][_a-z0-9]?$",
+            "--disable=C0111"
+        ],
+        "python.terminal.activateEnvInCurrentTerminal": false,
+        "python.terminal.activateEnvironment": false,
+        "output.smartScroll.enabled": false,
+        "notebook.formatOnSave.enabled": true,
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "cwd": "${fileDirname}",
+                "justMyCode": true
+            }
+        ]
+    }
+}
